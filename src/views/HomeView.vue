@@ -83,9 +83,11 @@
       </v-col>
       <div class="text-center mt-4">
         <h2 style="color: greenyellow">My projects</h2>
-        <div style="width:120px ">
-          <v-slider v-model="slider2" color="yellow" label="track-color"></v-slider>
-        </div>
+        <v-row justify="center" class="space px-16">
+          <v-col cols="12" xs="12" sm="6" md="4"> 
+
+          </v-col>
+        </v-row>
       </div>
     </v-container>
   </v-app>

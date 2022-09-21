@@ -6,12 +6,29 @@
         <v-row>
           <v-col cols="5">
             <div style="position: relative" class="mt-16">
-              <h1 class="text-grey">Hello,</h1>
+              <h1 class="text-white">Hello,</h1>
               <h1>I'm Fouzia BENADIDA</h1>
               <span class="text-grey">Frontend developer</span><br />
               <v-btn tile dark class="text-yellow mt-8" variant="outlined">
                 Contact me
               </v-btn>
+            </div>
+          </v-col>
+          <v-col cols="2">
+            <div
+              style="
+                position: absolute;
+                z-index: 9999;
+                bottom: 0;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+                text-align: center;
+              "
+              class="mt-16"
+            >
+              <i class="fa fa-angle-double-down" aria-hidden="true"></i>
             </div>
           </v-col>
         </v-row>

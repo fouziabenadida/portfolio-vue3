@@ -1,6 +1,11 @@
 <template>
   <v-app :style="{background: $vuetify.theme.themes.dark.background }" >
     <Navbar/>
+    <v-container fluid>
+   <div class="head">
+
+   </div>
+    </v-container>
   </v-app>
 </template>
 
@@ -17,88 +22,36 @@ export default {
 };
 </script>
 <style scoped>
-.top {
-  margin-top: 180px;
+.v-container {
+  padding: 16px 0 16px 0;
 }
-.topInverse {
-  margin-top: -250px;
-}
-.topTolbar {
-  margin-top: 100px;
+.head{
+  position: relative;
   text-align: center;
-}
-.first {
-  width: 100%;
-  height: 610px;
-  background: linear-gradient(
-    to right,
-    #181818,
-    #181818 50%,
-    #111111 50%,
-    #111111 50%
-  );
-  text-align: center;
-  padding: 2rem 2rem;
-}
-.second {
-  width: 100%;
+  padding: 12px;
+  margin-bottom: 6px;
   height: 400px;
-  background: #181818;
-  text-align: center;
-  padding: 2rem 2rem;
+  width: 100%;
+  color: white;
 }
-.secondchild1 {
-  display: inline-block;
-  background-color: #1e1e1e;
-  padding: 2rem 1rem;
-  vertical-align: middle;
-  text-align: left;
-  margin-top: 250px;
+.head:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: black;
+  transform: skew(0deg, 6deg);
 }
-.child {
-  display: inline-block;
-  padding: 2rem 1rem;
-  vertical-align: middle;
-  text-align: left;
-  margin-right: 8px;
-}
-.bgColor1 {
-  background-color: #1e1e1e;
-}
-.bgColor2 {
-  background-color: #ce1d2a;
-}
-
-.child1 {
-  display: inline-block;
-  padding: 2rem 1rem;
-  vertical-align: middle;
-  margin-right: 5px;
-  width: 240px;
-}
-.child2 {
-  display: inline-block;
-  width: 245px;
-  vertical-align: middle;
-}
-.mRight {
-  margin-right: 8px;
-}
-.mButton {
-  margin-bottom: 8px;
-}
-.padding {
-  padding: 8px 0;
-}
-
-.col-12.padd {
-  padding: 12px 0 !important;
-}
-.col-12.childcol {
-  padding: 0 !important;
-}
-h1.number {
-  font-size: 50px;
-  font-weight: bold;
+.head:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: black;
+  transform: skew(0deg, -6deg);
 }
 </style>

@@ -52,11 +52,27 @@
               </div>
             </v-col>
             <v-col cols="12" sm="6">
-              <h5 style="color:white" class="mt-16">About me</h5>
+              <h5 style="color: white" class="mt-16">About me</h5>
               <div style="width: 120px">
                 <v-slider v-model="slider2" color="yellow" label="track-color">
                 </v-slider>
               </div>
+              <h4 style="color: white" class="mt-n4">
+                I'M a frontend developer
+              </h4>
+              <p class="text-grey">
+                I am a frontend developer who follows and researches the
+                developments in technology with curiosity, and who is also
+                passionate about software, open minded and open to criticism.
+                After graduating from hydraulic engineering at master level, I
+                worked in this profession for 2 years. I could have continued in
+                this area which brought me rigor. But the lack of creativity and
+                evolution led me to consider another sector. For 6 months I have
+                been digging into the subject and it fascinates me. Coding seems
+                particularly fun to me, satisfies my permanent desire to learn
+                and brings me a great feeling of achievement when the code
+                works.
+              </p>
             </v-col>
           </v-row>
         </div>
@@ -73,7 +89,6 @@ export default {
   setup() {
     return {
       slider2: 50,
-      
     };
   },
   components: {

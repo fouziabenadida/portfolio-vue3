@@ -1,23 +1,33 @@
 <template>
-  <v-app :style="{background: $vuetify.theme.themes.dark.background }" >
-    <Navbar/>
+  <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
+    <Navbar />
     <v-container fluid>
-   <div class="head">
-
-   </div>
+      <div class="head">
+        <v-row>
+          <v-col cols="5">
+            <div style="position: relative" class="mt-16">
+              <h1 class="text-grey">Hello,</h1>
+              <h1>I'm Fouzia BENADIDA</h1>
+              <span class="text-grey">Frontend developer</span><br />
+              <v-btn tile dark class="text-yellow mt-8" variant="outlined">
+                Contact me
+              </v-btn>
+            </div>
+          </v-col>
+        </v-row>
+      </div>
     </v-container>
   </v-app>
 </template>
 
 <script>
-import Navbar from '../components/Navbar/Navbar.vue'
+import Navbar from "../components/Navbar/Navbar.vue";
 
 export default {
   name: "HomeView",
 
   components: {
     Navbar,
-    
   },
 };
 </script>
@@ -25,7 +35,7 @@ export default {
 .v-container {
   padding: 16px 0 16px 0;
 }
-.head{
+.head {
   position: relative;
   text-align: center;
   padding: 12px;

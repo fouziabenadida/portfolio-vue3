@@ -65,18 +65,28 @@
                 developments in technology with curiosity, and who is also
                 passionate about software, open minded and open to criticism.
                 After graduating from hydraulic engineering at master level, I
-                worked in this profession for 2 years. I could have continued in
-                this area which brought me rigor. But the lack of creativity and
-                evolution led me to consider another sector. For 6 months I have
-                been digging into the subject and it fascinates me. Coding seems
-                particularly fun to me, satisfies my permanent desire to learn
-                and brings me a great feeling of achievement when the code
-                works.
+                worked in this profession for 2 years.
+                <br />
+                I could have continued in this area which brought me rigor. But
+                the lack of creativity and evolution led me to consider another
+                sector. For 6 months I have been digging into the subject and it
+                fascinates me. Coding seems particularly fun to me, satisfies my
+                permanent desire to learn and brings me a great feeling of
+                achievement when the code works.
               </p>
+              <v-btn tile dark color="yellow" class="mt-4">
+                Download Resume
+              </v-btn>
             </v-col>
           </v-row>
         </div>
       </v-col>
+      <div class="text-center mt-4">
+        <h2 style="color: greenyellow">My projects</h2>
+        <div style="width:120px ">
+          <v-slider v-model="slider2" color="yellow" label="track-color"></v-slider>
+        </div>
+      </div>
     </v-container>
   </v-app>
 </template>

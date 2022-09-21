@@ -31,8 +31,36 @@
               <i class="fa fa-angle-double-down" aria-hidden="true"></i>
             </div>
           </v-col>
+          <v-col cols="5">
+            <div style=" position:absolute, z-index: 9999; " class="mt-16">
+              <v-img
+                class="photo-fouzia"
+                src="../assets/fouzia.jpg"
+                contain
+                max-height="300"
+              ></v-img>
+            </div>
+          </v-col>
         </v-row>
       </div>
+      <v-col cols="12" class="mt-16" id="about">
+        <div>
+          <v-row>
+            <v-col cols="12" sm="6">
+              <div class="egg">
+                <v-img src="../assets/i2.png" max-height="300"></v-img>
+              </div>
+            </v-col>
+            <v-col cols="12" sm="6">
+              <h5 style="color:white" class="mt-16">About me</h5>
+              <div style="width: 120px">
+                <v-slider v-model="slider2" color="yellow" label="track-color">
+                </v-slider>
+              </div>
+            </v-col>
+          </v-row>
+        </div>
+      </v-col>
     </v-container>
   </v-app>
 </template>
@@ -42,7 +70,12 @@ import Navbar from "../components/Navbar/Navbar.vue";
 
 export default {
   name: "HomeView",
-
+  setup() {
+    return {
+      slider2: 50,
+      
+    };
+  },
   components: {
     Navbar,
   },
@@ -62,7 +95,7 @@ export default {
   color: white;
 }
 .head:before {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0;
   left: 0;
@@ -72,7 +105,7 @@ export default {
   transform: skew(0deg, 6deg);
 }
 .head:after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 0;
   right: 0;
@@ -80,5 +113,14 @@ export default {
   width: 50%;
   background: black;
   transform: skew(0deg, -6deg);
+}
+.egg {
+  display: block;
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 356px;
+  height: 300px;
+  background-color: #fbdf7e;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 </style>

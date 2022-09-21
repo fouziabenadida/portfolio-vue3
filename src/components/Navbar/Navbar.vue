@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar>
+  <v-app-bar app color="black" dark flat class="px-12">
     <v-btn icon>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -22,10 +22,11 @@
                 0 1-.813.493.934.934 0 0 1-.813-.493z"
         />
       </svg>
+     
     </v-btn>
 
     <v-spacer></v-spacer>
-    <v-btn >Home</v-btn>
+    <v-btn  >Home</v-btn>
     <v-btn >Project</v-btn>
     <v-btn >about</v-btn>
     <v-btn > contact</v-btn>

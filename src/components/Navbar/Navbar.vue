@@ -1,13 +1,15 @@
 <template>
   <v-app-bar app color="black" dark flat class="px-12">
     <v-btn icon>
-      <svg
+      <svg 
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
         height="100%"
         fill="currentColor"
         class="bi bi-emoji-wink-fill"
         viewBox="0 0 16 16"
+        color="yellow"
+        
       >
         <path
           d="M8 0a8 8 0 1 1 0 16A8 8 0 0
@@ -22,22 +24,26 @@
                 0 1-.813.493.934.934 0 0 1-.813-.493z"
         />
       </svg>
-     
     </v-btn>
 
     <v-spacer></v-spacer>
-    <v-btn  >Home</v-btn>
-    <v-btn >Project</v-btn>
-    <v-btn >about</v-btn>
-    <v-btn > contact</v-btn>
+    <v-btn text @click="scroll('home')" color="yellow">Home</v-btn>
+    <v-btn text @click="scroll('project')">Project</v-btn>
+    <v-btn text @click="scroll('about')">about</v-btn>
+    <v-btn text @click="scroll('contact')"> contact</v-btn>
   </v-app-bar>
 </template>
 
 <script>
 export default {
   name: "NavBar",
- 
-};
+  methods:{
+    scroll(refName) {
+      const element = document.getElementById(refName);
+      element.scrollIntoView({ behavior: "smooth" });
+  }
+}
+}
 </script>
 
 <style></style>

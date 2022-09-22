@@ -28,7 +28,7 @@
     <v-spacer></v-spacer>
     <v-btn color="yellow" @click="goHome()">Home</v-btn>
     <v-btn @click="goProject()" >Project</v-btn>
-    <v-btn >about</v-btn>
+    <v-btn @click="goAbout()" >about</v-btn>
     <v-btn @click="goContact()"> contact</v-btn>
   </v-app-bar>
 </template>
@@ -45,6 +45,9 @@ export default {
     },
     goContact () {
       this.$router.push('/contact')
+    },
+    goAbout () {
+      this.$router.push('/about')
     }
   
   

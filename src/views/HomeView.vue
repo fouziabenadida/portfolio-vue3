@@ -1,6 +1,6 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
-    <Navbar />
+   
     <v-container fluid>
       <div class="head">
         <v-row>
@@ -88,14 +88,15 @@
 
           </v-col>
         </v-row>
-        <Projects/>
+      
       </div>
+      <Projects/>
     </v-container>
   </v-app>
 </template>
 
 <script>
-import Navbar from "../components/Navbar/Navbar.vue";
+
 import Projects from '../views/Projects.vue'
 
 export default {
@@ -106,8 +107,7 @@ export default {
     };
   },
   components: {
-    Navbar,
-    Projects
+    Projects,
   },
 };
 </script>

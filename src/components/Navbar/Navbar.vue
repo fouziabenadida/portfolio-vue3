@@ -26,7 +26,7 @@
     </v-btn>
 
     <v-spacer></v-spacer>
-    <v-btn color="yellow">Home</v-btn>
+    <v-btn color="yellow" @click="goHome()">Home</v-btn>
     <v-btn @click="goProject()" >Project</v-btn>
     <v-btn >about</v-btn>
     <v-btn > contact</v-btn>
@@ -40,6 +40,10 @@ export default {
     goProject() {
       this.$router.push('/project')
     },
+    goHome() {
+      this.$router.push('/')
+    },
+  
   
   },
 };

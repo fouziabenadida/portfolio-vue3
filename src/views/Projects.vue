@@ -1,5 +1,5 @@
 <template>
-    <Navbar/>
+   
     <div class="container">
       <h1 class="titre">Our Projects with React js & Vue js</h1>
   <v-row justify="center"  class="space px-16 ">
@@ -20,7 +20,9 @@
         </v-card-title>
         <v-spacer></v-spacer>
         <v-card-actions>
-          <v-btn @click="goProject()"  color="orange lighten-2" text> See Project </v-btn>
+
+          <v-btn @click="handleClick(project.link)" color="orange lighten-2" text>See Project </v-btn>
+
         </v-card-actions>
       </v-card>
     </v-col>
@@ -29,7 +31,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar/Navbar.vue';
+
 export default {
     name: "ProJect",
     data() {
@@ -75,10 +77,11 @@ export default {
         };
     },
     methods: {
-        goProject() {
-        }
+    handleClick(link) {
+      console.log(link) 
+    }
     },
-    components: { Navbar }
+    components: {  }
 };
 </script>
 

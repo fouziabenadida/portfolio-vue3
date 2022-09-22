@@ -1,22 +1,32 @@
 <template>
- <v-row justify="center" class="space px-16">
-<v-col 
-cols="12"
- xs="12"
-  sm="6"
-   md="4"
-   v-for="(project, i) in Projects"
-   :key="i"
-   style="cursor:pointer"
-   >
+  <v-row justify="center" class="space px-16">
+    <v-col
+      cols="12"
+      xs="12"
+      sm="6"
+      md="4"
+      v-for="(project, i) in Projects"
+      :key="i"
+      style="cursor: pointer"
+    >
+      <v-card class="mx-auto" max-width="344">
+        <v-img :src="project.img" height="200px"></v-img>
 
-</v-col>
- </v-row>
+        <v-card-title>
+          {{ project.name }}
+        </v-card-title>
+        <v-spacer></v-spacer>
+        <v-card-actions>
+          <v-btn  color="orange lighten-2" text> See Project </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
 export default {
-  name: "ProjectView",
+  name: "ProJect",
   data() {
     return {
       Projects: [
@@ -36,11 +46,22 @@ export default {
           id: 3,
           name: "food-delivery App",
           img: "https://images.unsplash.com/photo-1600728619239-d2a73f7aa541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-          link: "https://github.com/fouziabenadida/food-delivery-vuejs",
+          link: "https://github.com/fouziabenadida/weather-app-vuejs2",
+        },
+        {
+          id: 4,
+          name: "Weather App",
+          img: "https://images.unsplash.com/photo-1534068731687-d70176c2e7d5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+          link: "",
         },
       ],
     };
   },
+  methods:{
+    seeProject() {
+        
+    }
+  }
 };
 </script>
 

@@ -88,6 +88,7 @@
 
           </v-col>
         </v-row>
+        <Projects/>
       </div>
     </v-container>
   </v-app>
@@ -95,7 +96,7 @@
 
 <script>
 import Navbar from "../components/Navbar/Navbar.vue";
-
+import Projects from '../views/Projects.vue'
 export default {
   name: "HomeView",
   setup() {
@@ -105,6 +106,7 @@ export default {
   },
   components: {
     Navbar,
+    Projects
   },
 };
 </script>

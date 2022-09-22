@@ -78,7 +78,7 @@ export default {
     },
     methods: {
     handleClick(link) {
-      console.log(link) 
+      window.location.href = link
     }
     },
     components: {  }

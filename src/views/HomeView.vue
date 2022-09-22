@@ -97,6 +97,7 @@
 <script>
 import Navbar from "../components/Navbar/Navbar.vue";
 import Projects from '../views/Projects.vue'
+
 export default {
   name: "HomeView",
   setup() {
